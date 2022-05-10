@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>服務介紹</title>
+    <title>註冊會員</title>
 
     <link rel="../img/logo-sm.png" href="...">
     <meta name="description" content="命中錶, 手錶,鐘錶">
@@ -44,7 +44,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
                     <li class="nav-item mx-4">
-                        <a class="nav-link btn-special active" href="#">服務介紹</a>
+                        <a class="nav-link btn-special" aria-current="page" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link btn-special" href="serve.html">服務介紹</a>
                     </li>
                     <li class="nav-item mx-4">
                         <a class="nav-link btn-special" href="cart.html">商品專區</a>
@@ -53,7 +56,7 @@
                         <a class="nav-link btn-special" href="story.html">鐘錶故事</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-warning px-5 rounded-pill btn-pill-special" href="login.html">客製化手錶配件</a>
+                        <a class="btn btn-warning px-5 rounded-pill btn-pill-special" href="#">客製化手錶配件</a>
                     </li>
 
                 </ul>
@@ -61,65 +64,43 @@
             </div>
         </div>
     </nav>
-    <main style="background-image: url('./img/lightpaperfibers.png');">
-        <header class=" border border-2 border-warning border-bottom-0 border-end-0 border-start-0 mb-4 serve-banner">
-            <h2 class="d-none d-lg-block serve-bannerText fs-1 text-center">WATCH</h2>
+
+    <main class="bg-dark">
+        <header class=" border border-2 border-warning border-bottom-0 border-end-0 border-start-0">
         </header>
 
-        <section class="container mb-4 px-lg-5">
-            <ul class="row row-clos-1 row-cols-lg-4 ps-0">
-                <li class="col-12 list-unstyled">
-                    <div class="row d-flex flex-lg-column align-items-center">
-                        <img src="https://images.unsplash.com/photo-1604242692913-73866d2a9b8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
-                            alt="" class="mb-2 img-fluid col-4 col-lg-12">
 
-                        <div class="col-8 d-flex flex-column align-items-start align-items-lg-center text-lg-center">
-                            <strong class="text-warning">STEP1</strong>
-                            <strong class="fw-bold my-1 my-lg-3">購買客製錶服務</strong>
-                            <p>填寫購買表單<br>並完成轉帳付款</p>
+        <section class="py-3 py-lg-5 container">
+            <div class="row justify-content-center">
+                <div class="col col-lg-8">
 
-                        </div>
-                </li>
 
-                <li class="col-12 list-unstyled">
-                    <div class="row d-flex flex-lg-column align-items-center">
-                        <img src="https://images.unsplash.com/photo-1604242692760-2f7b0c26856d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
-                            alt="" class="mb-2 img-fluid col-4 col-lg-12">
+                    <form class="negative-row-margin mx-lg-0 bg-white text-warning rounded-3">
 
-                        <div class="col-8 d-flex flex-column align-items-start align-items-lg-center text-lg-center">
-                            <strong class="text-warning">STEP2</strong>
-                            <strong class="fw-bold my-1 my-lg-3">挑選相關配件</strong>
-                            <p>選定色系、款式<br>不提供退件</p>
+                        <div>
+                            <nav class="nav nav-pills nav-fill my-3">
+                                <a class="nav-link py-3 h4 text-warning" href="login.html">會員登入</a>
+                                <a class="nav-link py-3 h4 bg-warning active" href="#">註冊會員</a>
+                            </nav>
 
-                        </div>
-                </li>
+                            <div class="form-group px-4 mb-4">
+                                <label class="h4" for="addaccount">帳號</label>
+                                <input type="email" class="form-control" id="addaccount"
+                                    placeholder="example@email.com">
+                            </div>
+                            <div class="form-group px-4">
+                                <label class="h4" for="addpassword">密碼</label>
+                                <input type="password" class="form-control" id="addpassword">
+                            </div>
 
-                <li class="col-12 list-unstyled">
-                    <div class="row d-flex flex-lg-column align-items-center">
-                        <img src="https://images.pexels.com/photos/6433839/pexels-photo-6433839.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            alt="" class="mb-2 img-fluid col-4 col-lg-12">
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <a href="customer.html" class="btn btn-warning px-5 rounded-pill my-4 addSend">送出</a>
 
-                        <div class="col-8 d-flex flex-column align-items-start align-items-lg-center text-lg-center">
-                            <strong class="text-warning">STEP3</strong>
-                            <strong class="fw-bold my-1 my-lg-3">等待收貨</strong>
-                            <p>免運費寄送<br>精緻包裝</p>
+                            </div>
+                    </form>
 
-                        </div>
-                </li>
-
-                <li class="col-12 list-unstyled">
-                    <div class="row d-flex flex-lg-column align-items-center">
-                        <img src="https://images.pexels.com/photos/7470634/pexels-photo-7470634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="" class="mb-2 img-fluid col-4 col-lg-12">
-
-                        <div class="col-8 d-flex flex-column align-items-start align-items-lg-center text-lg-center">
-                            <strong class="text-warning">STEP4</strong>
-                            <strong class="fw-bold my-1 my-lg-3">幫助浪浪</strong>
-                            <p>每個月30號我們會將部分收入購買飼料，提供給xxx中途之家</p>
-
-                        </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -161,6 +142,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
 
 </body>
 
