@@ -1,8 +1,16 @@
-.font-family-kalam {
-    font-family: 'Kalam', cursive;
+.font-s {
+    font-family: 'Noto Sans TC',sans-serif;
+    font-weight: 300;
 }
 
+.font-m {
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    
+}
 
-.font-family-Sans {
-    font-family: 'Noto Sans TC', sans-serif;
+.text-style {
+    line-height: 125%;
+    letter-spacing: 0.2em;
+
 }

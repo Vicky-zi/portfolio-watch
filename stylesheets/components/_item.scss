@@ -1,0 +1,143 @@
+.itemG, .itemB {
+    position: relative;
+    margin-bottom: 3%;
+    
+
+    .itemImgG, .itemImgB {
+        height: 78px;
+        width: 66px;
+        color: white;
+        font-family: 'Noto Sans TC';
+        font-weight: 700;
+        text-align:center;
+        line-height:66px;
+        background-image: url('../../img/certificateA.svg');
+        background-size: cover;
+        background-position: center center;
+        margin-bottom: 0;
+        position: absolute;
+        top: -29px;
+        left: 35%;
+        z-index: 2;
+
+    }
+    .itemImgB {
+        height: 67px;
+        width: 68px;
+        line-height:68px;
+        background-image: url('../../img/certificateD.svg');
+    }
+
+    .item-g, .item-b {
+        color: $success;
+        // width: 178px;
+        height: 112px;
+        box-shadow: 0px 8px 0px #EDEEF0;
+        border-radius: 20px;
+        margin: 0 16px;
+        
+        .label {
+            background: #FAFAFA;
+            border: 1px solid $success;
+            border-radius: 50px;
+            padding: 1px 10px;
+            display:inline;
+        }
+    
+        .label-b {
+            background: #FAFAFA;
+            border: 1px solid #A0BCC8;
+            border-radius: 50px;
+            padding: 1px 10px;
+    
+        }
+    }
+
+    .item-b {
+        color: #A0BCC8;
+    }
+}
+
+
+
+
+.lighthouse {
+
+    position: relative;
+
+    &::after {
+        content: '';
+        color: $secondary;
+        width: 1px;
+        height: 100px;
+        border: 1px solid $secondary;
+        transform:rotate(10deg);
+        position: absolute;
+        bottom: 0;
+        right: 39%;
+    }
+
+    &::before {
+        content: '';
+        color: $secondary;
+        width: 1px;
+        height: 100px;
+        border: 1px solid $secondary;
+        transform:rotate(-10deg);
+        position: absolute;
+        bottom: 0;
+        left: 39%;
+    }
+}
+
+@media(max-width:768px){
+
+    .itemG, .itemB {
+        margin-bottom: 6.5%;
+    
+    }
+    .lighthouse {
+    
+        &::after {
+            bottom: 0;
+            right: 32%;
+        }
+    
+        &::before {
+            bottom: 0;
+            left: 32%;
+        }
+    }
+
+ }
+
+@media(max-width:414px){
+
+    .itemG, .itemB {
+        margin-bottom: 3%;
+
+        .itemImgG, .itemImgB {
+            top: -18%;
+            left: 33%;
+        }
+        .item-g, .item-b {
+            width: 100%;
+            margin: 0px 0px 32px 0px;
+        }
+
+    }
+
+
+    .lighthouse {
+    
+        &::after {
+            bottom: 0;
+            right: 19.5%;
+        }
+    
+        &::before {
+            bottom: 0;
+            left: 19.5%;
+        }
+    }
+ }

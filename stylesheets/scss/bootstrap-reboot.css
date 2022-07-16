@@ -28,21 +28,21 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #6d4c41;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #F9C745;
+  --bs-primary: #B57556;
+  --bs-secondary: #204379;
+  --bs-success: #B3B960;
+  --bs-info: #DAE4F1;
+  --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
+  --bs-light: #E2D9D3;
   --bs-dark: #212529;
-  --bs-primary-rgb: 109, 76, 65;
-  --bs-secondary-rgb: 108, 117, 125;
-  --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 249, 199, 69;
+  --bs-primary-rgb: 181, 117, 86;
+  --bs-secondary-rgb: 32, 67, 121;
+  --bs-success-rgb: 179, 185, 96;
+  --bs-info-rgb: 218, 228, 241;
+  --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 248, 249, 250;
+  --bs-light-rgb: 226, 217, 211;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -62,8 +62,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -97,7 +96,7 @@ hr:not([size]) {
   height: 1px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h6, h5, h4, h3, h2, h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -107,7 +106,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
-
 @media (min-width: 1200px) {
   h1 {
     font-size: 2.5rem;
@@ -117,7 +115,6 @@ h1 {
 h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
-
 @media (min-width: 1200px) {
   h2 {
     font-size: 2rem;
@@ -127,7 +124,6 @@ h2 {
 h3 {
   font-size: calc(1.3rem + 0.6vw);
 }
-
 @media (min-width: 1200px) {
   h3 {
     font-size: 1.75rem;
@@ -137,7 +133,6 @@ h3 {
 h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
-
 @media (min-width: 1200px) {
   h4 {
     font-size: 1.5rem;
@@ -162,7 +157,8 @@ abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
   cursor: help;
-  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
 }
 
 address {
@@ -195,7 +191,7 @@ dt {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-left: 0;
 }
 
@@ -226,20 +222,19 @@ sup {
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 a {
-  color: #6d4c41;
+  color: #B57556;
   text-decoration: underline;
 }
-
 a:hover {
-  color: #573d34;
+  color: #915e45;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -264,7 +259,6 @@ pre {
   overflow: auto;
   font-size: 0.875em;
 }
-
 pre code {
   font-size: inherit;
   color: inherit;
@@ -276,7 +270,6 @@ code {
   color: #d63384;
   word-wrap: break-word;
 }
-
 a > code {
   color: inherit;
 }
@@ -286,9 +279,8 @@ kbd {
   font-size: 0.875em;
   color: #fff;
   background-color: #212529;
-  border-radius: 0.2rem;
+  border-radius: 0.1re;
 }
-
 kbd kbd {
   padding: 0;
   font-size: 1em;
@@ -360,14 +352,13 @@ select {
   text-transform: none;
 }
 
-[role="button"] {
+[role=button] {
   cursor: pointer;
 }
 
 select {
   word-wrap: normal;
 }
-
 select:disabled {
   opacity: 1;
 }
@@ -377,16 +368,15 @@ select:disabled {
 }
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
-
 button:not(:disabled),
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled) {
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled) {
   cursor: pointer;
 }
 
@@ -414,13 +404,11 @@ legend {
   font-size: calc(1.275rem + 0.3vw);
   line-height: inherit;
 }
-
 @media (min-width: 1200px) {
   legend {
     font-size: 1.5rem;
   }
 }
-
 legend + * {
   clear: left;
 }
@@ -439,7 +427,7 @@ legend + * {
   height: auto;
 }
 
-[type="search"] {
+[type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
 }
@@ -458,6 +446,10 @@ legend + * {
 
 ::-webkit-color-swatch-wrapper {
   padding: 0;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
 }
 
 ::file-selector-button {
@@ -488,5 +480,4 @@ progress {
 
 [hidden] {
   display: none !important;
-}
-/*# sourceMappingURL=bootstrap-reboot.css.map */
+}/*# sourceMappingURL=bootstrap-reboot.css.map */

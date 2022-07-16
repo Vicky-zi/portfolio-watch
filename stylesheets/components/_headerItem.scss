@@ -1,63 +1,168 @@
-.home-banner {
-    height: 810px;
+.header-banner {
+    height: 634px;
+    background: url('../../img/白色海浪.png'),url('../../img/底色.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    
+    .header-bannerText {
+        color: #fff;
+        text-align: center;
+        letter-spacing: 0.2em;
+    }
+    .header-min {
+        width: 808px;
+        height: 322px;
+        border:  2px solid $primary;
+        border-radius: 20px;
+        
+    }
+}
+
+
+
+.vector {
     width: 100%;
-    background-image: url('https://images.pexels.com/photos/179911/pexels-photo-179911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-
-}
-
-.home-bannerText {
-    font-family: 'Kalam', cursive;
-    color: #fff;
-    text-align: center;
+    height: 20%;
     position: absolute;
-    top: 50%;
-    left: 40%;
+    background: url('../../img/海浪.png');
+    background-repeat: repeat-x;
+    background-position: center;
+    bottom: -118px;
+
 }
 
 
-
-// 服務頁開始
-
-
-.serve-banner {
-    height: 400px;
-    background-image: url('https://images.pexels.com/photos/2387819/pexels-photo-2387819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.supA {
     position: relative;
-
 }
-
-.serve-bannerText {
-    font-family: 'Kalam', cursive;
-    color: #fff;
-    text-align: center;
+.supB {
     position: absolute;
-    top: 50%;
-    left: 45%;
+    height: 64px;
+    width: 80px;
+    top: -10%;
+    right: 4%;
+
+    .supitem1 {
+        position: absolute;
+        top: -69%;
+        right: -2%;
+    }
+    .supitem2 {
+        position: absolute;
+        top: -33%;
+        right: 19%;
+    }
+}
+
+.supC {
+    position: absolute;
+    bottom:-9%;
+    z-index: 1;
+
+
+    .supcitem1 {
+        position: absolute;
+        bottom:10%;
+        left: 10%;
+    }
+    .supcitem2 {
+        position: absolute;
+        bottom:10%;
+        left: 4.5%;
+    }
 }
 
 
 
-@media (max-width: 576px) {
-    .home-banner {
-        height: 375px;
-        background-image: url('https://images.unsplash.com/photo-1604242692760-2f7b0c26856d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80');
+.conter {
+    background: url('../../img/沙子.png');
+}
+
+
+@media(max-width:768px){
+
+    .supB {
+        top: -6%;
+        right: 0%;
+
+
+        .supitem1 {
+            top: -78%;
+            right: 7%;
+        }
+        .supitem2 {
+            top: -41%;
+            right: 31%;
+        }
 
     }
 
+    .supC {
+        bottom:-10%;  
+    
+        .supcitem1 {
+            bottom:10%;
+            left: 5.5%;
+        }
+        .supcitem2 {
+            bottom:10%;
+            left: 0.5%;
+        }
+    }
+
+ }
 
 
-    // 服務頁開始
 
 
-    .serve-banner {
-        height: 250px;
+@media(max-width:414px){ 
 
+    .header-banner {
+        height: 793px;
+        background: url('../../img/白色海浪.png'),url('../../img/底色.png');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        position: relative;
+        
+        .header-min { 
+            width: 366px;
+            height: 489px;
+           } 
+    }
+
+    .vector {
+        bottom: -121px;
+    }
+    
+    .supB {
+        top: -6%;
+        right: 0%;
+
+
+        .supitem1 {
+            top: -72%;
+            right: -2%;
+        }
+        .supitem2 {
+            top: -44%;
+            right: 11%;
+        }
+
+    }
+
+    .supC {
+        bottom:-10%;  
+    
+        .supcitem1 {
+            bottom:10%;
+            left: 3%;
+        }
+        .supcitem2 {
+            bottom:10%;
+            left: -5%;
+        }
     }
 }

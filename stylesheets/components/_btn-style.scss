@@ -1,0 +1,34 @@
+.btn-style {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    letter-spacing: 0.2em;
+    color: white;
+    padding: 16px 20px;
+    margin: 32px 0;
+
+    width: 200px;
+    height: 57px;
+
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    color: white;
+    background-color: #D3A995;
+    // opacity: 0.6;
+}
+
+.btn-submit {
+    &:hover, .active {
+        border-color: #D3A995;
+    }
+
+}
+
+.btn-submitSuccess {
+    height: 100%;
+    width: 50%;
+    background-image: url('../../img/Vector.png');
+}

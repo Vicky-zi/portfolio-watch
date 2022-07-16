@@ -5,237 +5,311 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首頁</title>
+    <title>鎰威科技－前端切版實作</title>
 
-    <link rel="img/logo-sm.png" href="...">
-    <meta name="description" content="命中錶, 手錶,鐘錶">
-    <meta name='description' content='命中錶, 手錶, 配件, 運動, 功能' />
 
-    <meta property="og:title" content="命中錶" />
-    <meta property="og:description" content="命中錶">
-    <meta property="og:type" content="命中錶" />
-    <link href="img/logo-sm.png" rel="icon" />
-
-    <link href="stylesheets/helpers/all.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Noto+Sans+TC:wght@400;700&display=swap"
-        rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700&display=swap" rel="stylesheet">
+    <link href="stylesheets/helpers/all.css" rel="stylesheet">
 
 </head>
 
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" class="d-none d-lg-block" alt="">
-                <img src="img/logo-sm.png" class="d-lg-none" alt="" style="height: 40px;">
-                <h1 class="visually-hidden">命定錶</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
-                    <li class="nav-item mx-4">
-                        <a class="nav-link btn-special active" aria-current="page" href="#">首頁</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link btn-special" href="serve.html">服務介紹</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link btn-special" href="cart.html">商品專區</a>
-                    </li>
-                    <li class="nav-item mx-5">
-                        <a class="nav-link btn-special" href="story.html">鐘錶故事</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-warning px-5 rounded-pill btn-pill-special" href="login.html">客製化手錶配件</a>
-                    </li>
+    <header class="header-banner d-flex flex-column justify-content-center align-items-center mb-6">
 
-                </ul>
+        <h1 class="header-bannerText mt-4 fs-1 font-m text-style">There is no one</h1>
+        <h2 class="header-bannerText fs-2 font-m text-style">who loves pain</h2>
+
+        <a href="#form" class="btn btn-primary rounded-pill btn-style px-5 shadow-light">FORM</a>
+
+        <main>
+
+            <div class="container bg-info header-min text-secondary">
+                <div class="row d-flex flex-column justify-content-center align-items-center py-3 supA">
+                    <div class="supB">
+                        <img src="img/Ellipse 248.png" alt="" class="supitem1">
+                        <img src="img/Ellipse 246.svg" alt="" class="supitem2">
+                        <img src="img/sup.svg" alt="" class="supitem3">
+
+                    </div>
+                    <div class="col px-3 px-md-2">
+
+                        <h3 class="text-center my-3"><img src="img/cactus.png" alt=""><strong
+                                class="mx-2">paragraph</strong><img src="img/cactus.png" alt=""></h3>
+                        <p>1.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col px-3 px-md-2">
+                        <h3 class="text-center my-3"><img src="img/cactus.png" alt=""><strong
+                                class="mx-2">paragraph</strong><img src="img/cactus.png" alt=""></h3>
+                        <ol class="ps-3 mb-4">
+                            <strong></strong>
+                            <li>
+                                Quisque sodales leo <u><strong>vitae vulputate auctor.</strong></u>
+                            </li>
+                            <li>
+                                Proin ac justo ut nisl tincidunt imperdiet.Maecenas viverra libero a pellentesque
+                                blandit.
+                            </li>
+                            <li>
+                                Cras tristique tellus id leo bibendum, eu dapibus nisl accumsan.
+
+                            </li>
+                            <li>
+                                Donec ultrices sapien vitae leo <strong>venenatis ullamcorper.</strong>
+
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="supC">
+                        <img src="img/sup煙火.svg" alt="" class="supcitem1">
+                        <img src="img/煙火.svg" alt="" class="supcitem2">
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <div class="vector">
+
+        </div>
+    </header>
+
+
+
+
+    <!-- form start -->
+    <section class="py-5 bg-light">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="text-center formTitle mb-n4">
+                    <h4
+                        class="d-inline-flex font-m text-style text-primary bg-white border border-primary border-2 rounded-pill px-4 py-1 ms-n4 ms-md-0 form-shadow">
+                        FORM
+                    </h4>
+                    <img src="img/turtle.png" alt="" class="formImg">
+
+                </div>
+                <div class="col-12 col-lg-8" id="form">
+                    <form action="" class="d-flex flex-column justify-content-center needs-validation" novalidate>
+
+
+                        <div class="row g-2 bg-white px-4 py-5 form-style">
+                            <div>
+                                <label for="store" class="form-label">store<span
+                                        class="text-danger ms-1">*</span></label>
+                                <select class="form-select" aria-label="Default select example" id="store" list="store"
+                                    required>
+                                    <datalist id="store">
+                                        <option selected disabled value="">placeholder text</option>
+                                        <option value="store1">store1</option>
+                                        <option value="store2">store2</option>
+                                        <option value="store3">store3</option>
+                                    </datalist>
+                                </select>
+                                <div class="valid-feedback">
+                                    required
+                                </div>
+                                <div class="invalid-feedback">
+                                    wrong format
+                                </div>
+                            </div>
+                            <div>
+                                <label for="name" class="form-label">name<span class="text-danger ms-1">*</span></label>
+                                <input type="text" class="form-control" aria-label="name" id="name"
+                                    placeholder="placeholder text" required>
+                                <div class="valid-feedback">
+                                    required
+                                </div>
+                                <div class="invalid-feedback">
+                                    wrong format
+                                </div>
+                            </div>
+                            <div>
+                                <label for="tel" class="form-label">phone<span class="text-danger ms-1">*</span></label>
+                                <input type="tel" class="form-control" id="tel" aria-describedby="telHelp" max="10"
+                                    min="0" inputmode="tel" placeholder="placeholder text" required>
+                                <div class="valid-feedback">
+                                    required
+                                </div>
+                                <div class="invalid-feedback">
+                                    wrong format
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="const" class="form-label">Amount of consumption<span
+                                        class="text-danger ms-1">*</span></label>
+                                <input type="number" class="form-control" id="const" aria-describedby="emailHelp"
+                                    min="0" inputmode="decimal" placeholder="placeholder text" required>
+                                <div class="valid-feedback">
+                                    required
+                                </div>
+                                <div class="invalid-feedback">
+                                    wrong format
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="pay" class="form-label">payment<span
+                                        class="text-danger ms-1">*</span></label>
+                                <select class="form-select" aria-label="Default select example" id="pay" required>
+                                    <option selected disabled value="">digital payment</option>
+                                    <option value="digitalPayment">digital payment</option>
+                                    <option value="ATM">ATM</option>
+                                </select>
+
+                                <div class="valid-feedback">
+                                    required
+                                </div>
+                                <div class="invalid-feedback">
+                                    wrong format
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="btn btn-primary rounded-pill btn-style px-5 shadow-dark btn-submit mx-auto d-flex justify-content-around mb-1"
+                            type="submit">
+                            <p class="btnText">submit</p>
+                        </button>
+                    </form>
+
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+    <section class="py-6 bg-light conter">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block"></div>
+                
+
+                <div class="col-12 col-lg-8 justify-content-center">
+                    <div class="row row-cols-2 row-cols-md-3 gx-3 g-lg-4">
+
+                        <div class="col itemG">
+                            <div class="itemImgG">A</div>
+                            <div class="card item-g">
+                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
+                                    <p class="card-text ms-auto label me-1 me-md-0">ONE</p>
+                                    <h5 class="card-title text-center font-m">dehumidifier</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col itemG">
+                            <div class="itemImgG">B</div>
+                            <div class="card item-g">
+                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
+                                    <p class="card-text ms-auto label me-1 me-md-0">ONE</p>
+                                    <h5 class="card-title text-center font-m">range hood</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col itemG">
+                            <div class="itemImgG">C</div>
+                            <div class="card item-g">
+                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
+                                    <p class="card-text ms-auto label me-1 me-lg-0">ONE</p>
+                                    <h5 class="card-title text-center font-m">vacuum cleaner</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col itemB">
+                            <div class="itemImgB">D</div>
+                            <div class="card item-b">
+                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
+                                    <p class="card-text ms-auto label-b me-1 me-md-0">ONE</p>
+                                    <h5 class="card-title text-center font-m">toaster</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col itemB">
+                            <div class="itemImgB">E</div>
+                            <div class="card item-b">
+                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
+                                    <p class="card-text ms-auto label-b me-1 me-md-0">ONE</p>
+                                    <h5 class="card-title text-center font-m">scale</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col itemB">
+                            <div class="itemImgB">F</div>
+                            <div class="card item-b">
+                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
+                                    <p class="card-text ms-auto label-b me-1 me-md-0">ONE</p>
+                                    <h5 class="card-title text-center font-m">straightening iron</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col itemB">
+                            <div class="itemImgB">G</div>
+                            <div class="card item-b">
+                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
+                                    <p class="card-text ms-auto label-b me-1 me-md-0">ONE</p>
+                                    <h5 class="card-title text-center font-m">vacuum cleaner</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col itemB">
+                            <div class="itemImgB">H</div>
+                            <div class="card item-b">
+                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
+                                    <p class="card-text ms-auto label-b me-1 me-md-0">ONE</p>
+                                    <h5 class="card-title text-center font-m">rice cooker</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-2 d-none d-lg-block"></div>
 
             </div>
         </div>
-    </nav>
-    <main class="bg-dark text-white">
-        <header class=" border border-2 border-warning border-bottom-0 border-end-0 border-start-0 d-flex home-banner">
-            <h2 class="d-none d-lg-block home-bannerText fs-1 text-center">Full of fur,Full of love</h2>
-        </header>
 
-        <div class="container">
-            <div class="row flex-row-reverse row-cols-1 row-cols-lg-2 align-items-center mx-5 my-5">
-
-                <div class="col col-lg-6">
-                    <span class="fw-bold fs-4 text-warning font-family-kalam">Service</span>
-                    <h2 class="fw-blod">相依相伴 一起走過分分秒秒</h2>
-                    <span>要成為一個有品味的人你必須要有一塊手錶。因為手錶不僅是一種計時工具，而且還是一種裝飾，一款好的手錶是的亮點，也可以造就獨特品味。</span>
-                </div>
-                <div class="col col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1507680576301-98c2029cf434?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                        alt="" class="img-fluid">
-                </div>
-            </div>
-
-            <section class="text-center">
-                <h3 class="mb-4">商品專區</h3>
-
-
-                <div class="row row-cols-1 row-cols-lg-4 g-4 mb-4 text-dark mx-3 mx-lg-0">
-                    <div class="col">
-                        <a href="#" class="card text-decoration-none border-0 shadow-style h-100">
-                            <img src="https://images.unsplash.com/photo-1636551462973-3d59d4405012?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                                alt="" class="img-fluid card-img-top min-contes">
-                            <div class="card-body text-start">
-                                <div>
-                                    <h5 class="fw-blod">酷炫電子手錶</h5>
-                                    <p><small>W0012345</small></p>
-                                    <p class="mt-4 pt-3"><strong>NT$ 6,399</strong></p>
-                                </div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col hot-contes">
-                        <a href="#" class="card text-decoration-none border-0 shadow-style h-100">
-                            <img src="https://images.unsplash.com/photo-1548169874-53e85f753f1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=710&q=80"
-                                alt="" class="img-fluid card-img-top min-contes">
-                            <div class="card-body text-start">
-                                <div>
-                                    <h5 class="fw-blod">極致工藝機械錶</h5>
-                                    <p><small>W0012346</small></p>
-                                    <p class="font-monospace text-decoration-line-through mb-0">NT$ 10,699</p>
-                                    <p class="text-danger"><strong>NT$ 8,399</strong></p>
-                                </div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#" class="card text-decoration-none border-0 shadow-style h-100">
-                            <img src="https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
-                                alt="" class="img-fluid card-img-top min-contes">
-                            <div class="card-body text-start">
-                                <div>
-                                    <h5 class="fw-blod">百搭造型石英錶</h5>
-                                    <p><small>W0012347</small></p>
-                                    <p class="mt-4 pt-3"><strong>NT$ 5,899</strong></p>
-                                </div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#" class="card text-decoration-none border-0 shadow-style h-100">
-                            <img src="https://images.unsplash.com/photo-1526045431048-f857369baa09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                alt="" class="img-fluid card-img-top min-contes">
-                            <div class="card-body text-start">
-                                <div>
-                                    <h5 class="fw-blod">光動能錶</h5>
-                                    <p><small>W0012348</small></p>
-                                    <p class="mt-4 pt-3"><strong>NT$ 7,999</strong></p>
-                                </div>
-
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-
-
-
-
-                <div class="d-grid gap-2 d-md-block mb-5">
-                    <button class="btn btn-outline-warning rounded-pill btn-pill-m px-5 me-lg-3"
-                        type="button">查看更多商品</button>
-                    <button class="btn btn-warning rounded-pill btn-pill-m px-5" type="button">客製化手錶配件</button>
-                </div>
-
-                <img src="/img/title2.png" alt="">
-                <p>這裡是愛錶成痴的人們，若您感興趣他們的故事，不訪來認識一下唄</p>
-
-                <div class="row row-cols-1 row-cols-md-3 g-4 mx-1 px-1">
-                    <div class="col card-style">
-                        <a href="#" class="card h-100 shadow-style border-radius-lg text-decoration-none text-dark">
-                            <div class="card-heard-img chage1"></div>
-                            <div class="card-body text-start">
-                                <h5>因為愛錶成痴</h5>
-                                <p>手錶已成生活中最佳幫手，陪我運動的好夥伴，有來電也不會漏接...</p>
-                            </div>
-                            <div class="card-footer bg-white">
-                                <button class="btn fw-bold font-family-kalam card-style-btn">More</button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col card-style">
-                        <a href="#" class="card h-100 shadow-style border-radius-lg text-decoration-none text-dark">
-                            <div class="card-heard-img chage2"></div>
-                            <div class="card-body text-start">
-                                <h5>因為愛錶成痴</h5>
-                                <p>成就品味非凡，商務、旅行最佳夥伴，為整體造型畫龍點睛...</p>
-                            </div>
-                            <div class="card-footer bg-white">
-                                <button class="btn fw-bold font-family-kalam card-style-btn">More</button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col card-style">
-                        <a href="#" class="card h-100 shadow-style border-radius-lg text-decoration-none text-dark">
-                            <div class="card-heard-img chage3"></div>
-                            <div class="card-body text-start">
-                                <h5>因為愛錶成痴</h5>
-                                <p>我們因為一隻手錶相戀，想看更多戀愛故事...</p>
-                            </div>
-                            <div class="card-footer bg-white">
-                                <button class="btn fw-bold font-family-kalam card-style-btn">More</button>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <a href="story.html" class="btn btn-outline-warning rounded-pill btn-pill-m px-5 my-5">看看更多鐘錶故事</a>
-
-            </section>
         </div>
-
-
-
-
-    </main>
-
-    <footer class="border border-end-0 border-bottom-0 border-start-0 border-warning border-2 bg-light">
-
-        <section class="container py-5">
-            <div class="row row-clos-1 row-clos-4 d-flex justify-content-center align-items-center text-center">
-
-                <div class="col mb-4">
-                    <img src="img/footer2.png" alt="">
+    </section>
+    <section class="bg-light text-white">
+        <div class="container py-5">
+            <div class="row row-cols-1 text-center">
+                <div class="col font-m lighthouse">
+                    <p class="fs-5 mb-1 text-primary">13.32</p>
+                    <p class="fs-5 mb-1 text-secondary">who seeks after it and</p>
+                    <p class="fs-5 mb-0 mb-md-3 text-secondary">wants to have it</p>
                 </div>
-                <div class="col mb-5 mb-lg-0">
-                    <h4>加入我們團隊</h4>
-                    <p>我也愛錶，希望能盡一份心力！</p>
-                    <button type="button" class="btn btn-outline-dark rounded-pill btn-pill-m px-5">聯絡我們</button>
-                </div>
-                <div class="col mb-4">
-                    <img src="img/footer1.png" alt="">
-                </div>
-                <div class="col">
-                    <h4>加入我們團隊</h4>
-                    <p>我也有故事，你有酒嗎？</p>
-                    <button type="button" class="btn btn-outline-dark rounded-pill btn-pill-m px-5">投稿專區</button>
+                <div class="col"><img src="img/lighthouse.svg" alt=""></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-light">
+        <div class="bg-secondary text-white ft-bg">
+            <div class="container">
+                <div class="row row-cols-1 text-center py-5">
+                    <div class="col mb-4">
+                        <h3 class="font-m mb-0">
+                            Neque porro quisquam</br>
+                            est qui dolorem!
+                        </h3>
+                    </div>
+                    <div class="col"><img src="img/market.svg" alt=""></div>
+    
                 </div>
             </div>
-        </section>
-        <div class="footer bg-dark text-center py-3">
-            <p class="text-light mb-0"><small>Copyright © 2021 WATCH.All rights reserved.</small></p>
 
         </div>
 
@@ -244,14 +318,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-        <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="js/all.js"></script>
-
+    <script src="js/all.js"></script>
 
 </body>
-
-
-
 
 
 </html>

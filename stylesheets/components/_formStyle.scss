@@ -1,0 +1,70 @@
+.formTitle {
+    position: relative;
+}
+
+.formImg {
+    position: absolute;
+    top: -24%;
+    left: 54%;
+}
+
+
+.form-style {
+    border: 2px solid $primary;
+    box-shadow: 0px 1px 20px rgba(73, 72, 72, 0.25);
+    border-radius: 16px;
+
+    select,input {
+        padding: 8px 16px;
+        gap: 10px;
+        border: 1px solid #204379;
+        border-radius: 20px; 
+    }
+    .form-control:focus, .form-select:focus {
+        border-color: #93BBF9;
+        box-shadow: none;
+        border: 3px solid #93BBF9;
+    }
+}
+
+.form-select {
+    background-image: url('../../img/Color.svg');
+    background-position: right 1rem center;
+    background-size: 10px 6px;
+
+}
+
+//表單驗證錯誤
+.was-validated .form-select:invalid, .form-select.is-invalid, .was-validated .form-control:invalid, .form-control.is-invalid {
+    border: 3px solid #E06D6D;
+    border-color: #E06D6D;
+    background-image: none;
+}
+
+.was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
+    background-image: url('../../img/Color.svg');
+    background-position: right 1rem center;
+    background-size: 10px 6px;
+
+}
+
+
+//表單驗證正確
+.was-validated .form-control:valid, .form-control.is-valid {
+    border-color: #204379;
+    background-image: none;
+}
+
+
+@media(max-width:768px){
+    .formImg {
+        left: 56%;
+    }
+
+}
+
+@media(max-width:414px){
+    .formImg {
+        left: 57%;
+    }
+ }
