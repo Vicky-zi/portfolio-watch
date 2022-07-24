@@ -1,46 +1,52 @@
-const btn = document.querySelector('.btn-submit');
-const btnText = document.querySelector('.btnText');
-const errorText = document.querySelector('.needs-validation');
+$(document).ready(function () {
 
-var bigImg = document.createElement("img");
-var btnSpan = document.createElement("span");
 
-btn.addEventListener('click', function(){
-  'use strict'
+	// 購物車加(減)
+	$('.shopping-cart').on('click', function (e) {
+		e.preventDefault();
+		const numberElement = document.querySelector(".number");
+		const currentNumber = Number(numberElement.textContent);
+		numberElement.textContent = currentNumber + 1;
+	});
+	// 購物車加(減)
 
-  var forms = document.querySelectorAll('.needs-validation');
 
-  Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault();
-            event.stopPropagation();
-            bigImg.src="img/error.png";
-            bigImg.classList.add('me-3');
-            btn.insertBefore(bigImg, btnText);
-            btnText.innerHTML = 'failure';
-            btnText.style.color = "#FFE3E3";
-            errorText.appendChild(btnSpan);
-            btnSpan.innerHTML = 'This person does not exist';
-            btnSpan.classList.add('text-center');
-            btnSpan.style.color = "#E06D6D";
+	//搜尋
+	$('.slide').click(function(event){
+		$('.input-se').toggleClass('slide-open');
+		$('.number-re').toggleClass('number-open');
+	});
 
-          } else {
-            bigImg.src="img/success.svg";
-            bigImg.classList.add('me-3');
-            btn.insertBefore(bigImg, btnText);
-            btnText.innerHTML = 'success';
-            btnText.style.color = "#E6FFB1";
-            alert('送出成功');
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
-  
-  // if(document.send.account.value=='') {
-  //   alert('警示文字');
-  // }
+	//modal刪除事件
+	$('#removeModal').on('show.bs.modal', function (event) {
+		var button = $(event.relatedTarget);
+		var title = button.data('title');
+		var body = button.data('body');
+
+		var modal = $(this);
+		modal.find('.modal-title').text('確認' + title);
+		modal.find('.modal-body').text(body);
+	});
+	$('.remove').click(function(){
+		$('.removeitem').parent().remove();
+
+	});
+
+	// //更換麵包屑名稱
+	$('#id1').click(function(even){
+		$('#changename').text("舒適床罩");
+	})
+	$('#id2').click(function(even){
+		$('#changename').text("好眠枕頭");
+	})
+	$('#id3').click(function(even){
+		$('#changename').text("品味精選");
+	})
+	$('#id4').click(function(even){
+		$('#changename').text("裝飾好物");
+	})
+	$('#id5').click(function(even){
+		$('#changename').text("主題家居");
+	})
 
 });

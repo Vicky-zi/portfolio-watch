@@ -1,0 +1,14 @@
+.image-se {
+    height: 450px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-top{
+    margin-top: -20px;
+}
+@media(max-width:565px){ 
+    .image-se { 
+        margin-top: 0;
+       } 
+}

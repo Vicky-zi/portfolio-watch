@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>運送資料｜好舒適家居 shu shi bed</title>
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- <script src="js/all.js"></script> -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container nav-se">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand nav-logo" href="index.html">
+                <img src="images/logo-na.png" height="75" alt="" class="d-none d-lg-inline-block">
+
+            </a>
+            <a href="index.html">
+                <img src="images/logo-sm.png" height="30" alt="" class="d-inline-block d-lg-none">
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-center py-3" id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-lg-9">
+                        <a class="nav-link" href="product.html">產品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="login.html">會員</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">購物車</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container my-lg-6">
+        <div class="row mb-lg-6">
+            <div class="col-lg-8">
+
+                <form class="negative-row-margin mx-lg-0 border border-primary border-3">
+
+                    <div class="px-5 py-5">
+
+                        <div class="form-row">
+
+                            <div class="col-6 text-info">
+                                <h1>運送</h1>
+                            </div>
+
+                            <div class="col-6 mt-3">
+
+                                <ul class="c-step list-unstyled mb-2">
+                                    <li class="c-step__item done">
+                                        <span class="c-step__item__pointer material-icons">done</span>
+                                        <span class="sr-only">step1</span>
+                                    </li>
+                                    <li class="c-step__item done">
+                                        <span class="c-step__item__pointer material-icons">done</span>
+                                        <span class="sr-only">step2</span>
+                                    </li>
+                                    <li class="c-step__item active">
+                                        <span class="c-step__item__pointer"></span>
+                                        <span class="sr-only">step3（current）</span>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+                            <div class="col-6 mt-5">
+                                <div class="form-group">
+                                    <label class="h4 text-info" for="firstName">姓氏</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="王">
+                                </div>
+                            </div>
+                            <div class="col-6 mt-5">
+                                <div class="form-group">
+                                    <label class="h4 text-info" for="lastName">名字</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="小明">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="form-group">
+                            <label class="h4 text-info" for="inputel">電話</label>
+                            <input type="tel" class="form-control" id="inputel" placeholder="0912-345-678">
+                        </div>
+                        <div class="form-group">
+                            <label class="h4 text-info" for="inputAddress">地址</label>
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <select class="custom-select form-contro" id="inputAddress" required>
+                                            <option selected value="">高雄市</option>
+                                            <option>台北市</option>
+                                            <option>新北市</option>
+                                            <option>台中市</option>
+                                            <option>台南市</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <select class="custom-select form-contro" id="inputAddress" required>
+                                            <option selected value="">新興區</option>
+                                            <option>舊興區</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="幸福路520號">
+                        </div>
+                </form>
+
+            </div>
+
+            <a href="checkout-success.html" class="btn btn-block btn-info py-3 d-none d-lg-block">下一步</a>
+
+            </form>
+
+
+        </div>
+
+
+        <div class="col-lg-4 d-none d-lg-block">
+            <div class="card border-light mb-3">
+                <h2 class="card-header text-center bg-light border-bottom-0 text-info">訂單摘要</h2>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-cl">小計</span>
+                        <span class="text-cl">NT$ 2,480</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span class="text-cl">運費</span>
+                        <span class="text-cl">NT$ 300</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="h5 text-info">總計</span>
+                        <span class="h5 text-info">NT$ 2780</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card border-light mb-3 text-info">
+                <h2 class="card-header text-center bg-light border-bottom-0">購物清單</h2>
+                <div class="card-body">
+                    <div class="d-flex mb-3">
+                        <div class="mr-2">
+                            <div class="cart-img cart-img-sm"
+                                style="background-image: url('https://images.unsplash.com/photo-1600812682951-23678846dccb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=378&q=80');">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-md-center flex-column flex-md-row flex-md-grow-1">
+                            <div>
+                                <span class="h5 text-cl">簡約經典白被單</span><br>
+                                <span class="text-cl">NT$ 1580</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="mr-2">
+                            <div class="cart-img cart-img-sm"
+                                style="background-image: url('https://images.unsplash.com/photo-1606855637060-a513f51f494c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80');">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-md-center flex-column flex-md-row flex-md-grow-1">
+                            <div>
+                                <span class="h5 text-cl">純淨白枕套</span><br>
+                                <span class="text-cl">NT$ 450</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="mr-2">
+                            <div class="cart-img cart-img-sm"
+                                style="background-image: url('https://images.unsplash.com/photo-1602810372187-76337cedc513?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&au');">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-md-center flex-column flex-md-row flex-md-grow-1">
+                            <div>
+                                <span class="h5 text-cl">居家燈具</span><br>
+                                <span class="text-cl">NT$ 450</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <a href="checkout-success.html" class="btn btn-warning btn-block btn-lg py-3 d-lg-none">下一步</a>
+
+    <footer>
+        <div class="bg-info">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-3 col-12">
+                        <h5>關於我們</h5>
+                        <div class="row d-flex">
+                            <div class="col-md-12 col-4"><a href="#"><span>品牌故事</span></a></div>
+                            <div class="col-md-12 col-4"><a href="#"><span>商店簡介</span></a></div>
+                            <div class="col-md-12 col-4"><a href="#"><span>隱私權條款</span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mt-2 mt-lg-0">
+                        <h5>購物說明</h5>
+                        <div class="row d-flex">
+                            <div class="col-md-12 col-4"><a href="#"><span>付款方式</span></a></div>
+                            <div class="col-md-12 col-4"><a href="#"><span>運送方式</span></a></div>
+                            <div class="col-md-12 col-4"><a href="#"><span>退換貨方式</span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mt-2 mt-lg-0">
+                        <h5>客服資訊</h5>
+                        <div class="row d-flex">
+                            <div class="col-md-12 col-4"><a href="#"><span>客服留言</span></a></div>
+                            <div class="col-md-12 col-4"><a href="#"><span>常見問題</span></a></div>
+                            <div class="col-md-12 col-4"><a href="#"><span>會員權益聲明</span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 text-right my-3 text-center">
+                        <iframe width="100%"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7230.844654044096!2d121.72340817819529!3d25.019737900648153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d56a9178f0b5b%3A0x14fc08ebc6fee72f!2z6I-B5qGQ!5e0!3m2!1szh-TW!2stw!4v1614674533643!5m2!1szh-TW!2stw"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

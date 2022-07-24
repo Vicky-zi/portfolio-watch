@@ -1,0 +1,13 @@
+.btn-joy {
+     @include button-variant(#f0b478, darken(#f0b478, 10%));
+     color: white;
+     &:hover {
+         color: white;
+     }
+}
+.btn-outline-joy {
+    @include button-outline-variant(#f0b478, lighten(#f0b478,5%), #f0b478);
+    &:hover {
+        color: $white;
+    }
+}

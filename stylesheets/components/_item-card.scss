@@ -1,0 +1,71 @@
+//產品頁
+.item-card .item-image {
+    height: 315px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.item-hot {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background-color: #ef5350;
+    padding: 15px 10px;
+    color: #fff;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr ;
+    letter-spacing: 5px;
+}
+
+.item-classic {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background-color: #fdd835;
+    padding: 15px 10px;
+    color: #fff;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr ;
+    letter-spacing: 5px;
+}
+
+.item-name {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: $font-size-lg;
+  }
+
+.item-name {
+    border-right: 1px solid #EAF0ED;
+}
+
+.item-stared-icon {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+}
+
+.box-shadow {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .16);
+
+    &:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, .24);
+    }
+}
+
+//首頁產品 
+
+.index-card-img {
+
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+@media(max-width:767px){ 
+    .index-card-img { 
+        height: 100px;
+    } 
+}

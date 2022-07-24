@@ -2,325 +2,323 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鎰威科技－前端切版實作</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>好舒適家居｜shu shi bed</title>
+  <link rel="images/favicon.png" href="...">
+  <meta name="description" content="好舒適, 家具,室內">
+  <meta name='description' content='好舒適, 家具, 室內, 溫馨, 專業' />
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700&display=swap" rel="stylesheet">
-    <link href="stylesheets/helpers/all.css" rel="stylesheet">
-
+  <meta property="og:title" content="好舒適家居" />
+  <meta property="og:description" content="好舒適家居">
+  <meta property="og:type" content="好舒適家居" />
+  <meta property="og:url" content="好舒適家居" />
+  <meta property="og:image" content="好舒適家居" />
+  <link href="images/favicon.png" rel="icon" />
+  <link rel="stylesheet" href="stylesheets/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
-
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container nav-se">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand nav-logo" href="index.html">
+        <img src="images/logo-na.png" height="75" alt="" class="d-none d-lg-inline-block">
 
-    <header class="header-banner d-flex flex-column justify-content-center align-items-center mb-6">
+      </a>
+      <a href="index.html">
+        <img src="images/logo-sm.png" height="30" alt="" class="d-inline-block d-lg-none">
+      </a>
 
-        <h1 class="header-bannerText mt-4 fs-1 font-m text-style">There is no one</h1>
-        <h2 class="header-bannerText fs-2 font-m text-style">who loves pain</h2>
+      <div class="collapse navbar-collapse justify-content-center py-3" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mr-lg-9">
+            <a class="nav-link" href="product.html">產品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">會員</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">購物車</a>
+          </li>
+        </ul>
+      </div>
 
-        <a href="#form" class="btn btn-primary rounded-pill btn-style px-5 shadow-light">FORM</a>
+    </div>
+  </nav>
 
-        <main>
+  <header class="header">
+    <div class="jumbotron jumbotron-fluid header-main-image bg-cover"
+      style="background-image: url('https://cdn.pixabay.com/photo/2016/12/08/03/53/pillow-1890940_960_720.jpg');">
+      <div class="container pt-7 text-center text-lg-left">
+        <h1 class="display-4 d-none d-lg-block">體驗美好生活<br>現在開始</h1>
+        <h1 class="d-lg-none">體驗美好生活<br>現在開始</h1>
+        <a href="product.html"><button class="btn btn-primary">搶先看</button></a>
+      </div>
+    </div>
 
-            <div class="container bg-info header-min text-secondary">
-                <div class="row d-flex flex-column justify-content-center align-items-center py-3 supA">
-                    <div class="supB">
-                        <img src="img/Ellipse 248.png" alt="" class="supitem1">
-                        <img src="img/Ellipse 246.svg" alt="" class="supitem2">
-                        <img src="img/sup.svg" alt="" class="supitem3">
+  </header>
 
-                    </div>
-                    <div class="col px-3 px-md-2">
+  <div class="bg-primary my-lg-9">
+    <div class="container">
+      <h2 class="pt-5 text-center">打造宜居家飾</h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <div class="main-image bg-cover mt-3 box-shadow"
+            style="background-image: url('https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80'); height: 150px;">
+          </div>
+          <div class="btn-group my-3 btn-group-sm" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-secondary rounded-lg">家庭</button>
+            <button type="button" class="btn btn-outline-secondary rounded-lg mx-lg-2">溫馨</button>
+            <button type="button" class="btn btn-outline-secondary rounded-lg">客廳</button>
+            <button type="button" class="btn btn-outline-secondary rounded-lg mx-lg-2">放鬆</button>
+          </div>
 
-                        <h3 class="text-center my-3"><img src="img/cactus.png" alt=""><strong
-                                class="mx-2">paragraph</strong><img src="img/cactus.png" alt=""></h3>
-                        <p>1.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="col px-3 px-md-2">
-                        <h3 class="text-center my-3"><img src="img/cactus.png" alt=""><strong
-                                class="mx-2">paragraph</strong><img src="img/cactus.png" alt=""></h3>
-                        <ol class="ps-3 mb-4">
-                            <strong></strong>
-                            <li>
-                                Quisque sodales leo <u><strong>vitae vulputate auctor.</strong></u>
-                            </li>
-                            <li>
-                                Proin ac justo ut nisl tincidunt imperdiet.Maecenas viverra libero a pellentesque
-                                blandit.
-                            </li>
-                            <li>
-                                Cras tristique tellus id leo bibendum, eu dapibus nisl accumsan.
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="main-image bg-cover mt-3 box-shadow"
+            style="background-image: url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'); height: 150px;">
+          </div>
+          <div class="btn-group my-3 btn-group-sm" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-secondary rounded-lg">客廳</button>
+            <button type="button" class="btn btn-outline-secondary rounded-lg mx-lg-2">裝飾</button>
+            <button type="button" class="btn btn-outline-secondary rounded-lg">放鬆</button>
+          </div>
 
-                            </li>
-                            <li>
-                                Donec ultrices sapien vitae leo <strong>venenatis ullamcorper.</strong>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="main-image bg-cover mt-3 box-shadow"
+            style="background-image: url('https://images.unsplash.com/photo-1595334535896-83836454339a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80'); height: 150px;">
+          </div>
+          <div class="btn-group my-3 btn-group-sm" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-secondary rounded-lg">設計</button>
+            <button type="button" class="btn btn-outline-secondary rounded-lg mx-lg-2">優雅</button>
+            <button type="button" class="btn btn-outline-secondary rounded-lg">客廳</button>
+            <button type="button" class="btn btn-outline-secondary rounded-lg mx-lg-2">品味</button>
+          </div>
 
-                            </li>
-                        </ol>
-                    </div>
+        </div>
 
-                    <div class="supC">
-                        <img src="img/sup煙火.svg" alt="" class="supcitem1">
-                        <img src="img/煙火.svg" alt="" class="supcitem2">
-                    </div>
+      </div>
+    </div>
+  </div>
 
-                </div>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">為什麼選擇好舒適家居</h2>
+      <div class="row align-items-center text-info">
+        <div class="col-6">
+          <div class="d-flex flex-column flex-lg-row">
+            <div class="mr-3 text-center"><i class="fas fa-bed fa-4x"></i></i></div>
+            <div>
+              <h3 class="text-center text-xl-left">舒適材質</h3>
+              <p class="d-none d-md-block">舒適的寢具、枕頭和柔軟的床罩，就能盡情消磨慵懶週末，和緩地開啟新的一天。</p>
             </div>
-        </main>
-
-        <div class="vector">
-
+          </div>
         </div>
-    </header>
-
-
-
-
-    <!-- form start -->
-    <section class="py-5 bg-light">
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="text-center formTitle mb-n4">
-                    <h4
-                        class="d-inline-flex font-m text-style text-primary bg-white border border-primary border-2 rounded-pill px-4 py-1 ms-n4 ms-md-0 form-shadow">
-                        FORM
-                    </h4>
-                    <img src="img/turtle.png" alt="" class="formImg">
-
-                </div>
-                <div class="col-12 col-lg-8" id="form">
-                    <form action="" class="d-flex flex-column justify-content-center needs-validation" novalidate>
-
-
-                        <div class="row g-2 bg-white px-4 py-5 form-style">
-                            <div>
-                                <label for="store" class="form-label">store<span
-                                        class="text-danger ms-1">*</span></label>
-                                <select class="form-select" aria-label="Default select example" id="store" list="store"
-                                    required>
-                                    <datalist id="store">
-                                        <option selected disabled value="">placeholder text</option>
-                                        <option value="store1">store1</option>
-                                        <option value="store2">store2</option>
-                                        <option value="store3">store3</option>
-                                    </datalist>
-                                </select>
-                                <div class="valid-feedback">
-                                    required
-                                </div>
-                                <div class="invalid-feedback">
-                                    wrong format
-                                </div>
-                            </div>
-                            <div>
-                                <label for="name" class="form-label">name<span class="text-danger ms-1">*</span></label>
-                                <input type="text" class="form-control" aria-label="name" id="name"
-                                    placeholder="placeholder text" required>
-                                <div class="valid-feedback">
-                                    required
-                                </div>
-                                <div class="invalid-feedback">
-                                    wrong format
-                                </div>
-                            </div>
-                            <div>
-                                <label for="tel" class="form-label">phone<span class="text-danger ms-1">*</span></label>
-                                <input type="tel" class="form-control" id="tel" aria-describedby="telHelp" max="10"
-                                    min="0" inputmode="tel" placeholder="placeholder text" required>
-                                <div class="valid-feedback">
-                                    required
-                                </div>
-                                <div class="invalid-feedback">
-                                    wrong format
-                                </div>
-                            </div>
-
-                            <div>
-                                <label for="const" class="form-label">Amount of consumption<span
-                                        class="text-danger ms-1">*</span></label>
-                                <input type="number" class="form-control" id="const" aria-describedby="emailHelp"
-                                    min="0" inputmode="decimal" placeholder="placeholder text" required>
-                                <div class="valid-feedback">
-                                    required
-                                </div>
-                                <div class="invalid-feedback">
-                                    wrong format
-                                </div>
-                            </div>
-
-                            <div>
-                                <label for="pay" class="form-label">payment<span
-                                        class="text-danger ms-1">*</span></label>
-                                <select class="form-select" aria-label="Default select example" id="pay" required>
-                                    <option selected disabled value="">digital payment</option>
-                                    <option value="digitalPayment">digital payment</option>
-                                    <option value="ATM">ATM</option>
-                                </select>
-
-                                <div class="valid-feedback">
-                                    required
-                                </div>
-                                <div class="invalid-feedback">
-                                    wrong format
-                                </div>
-                            </div>
-
-                        </div>
-                        <button class="btn btn-primary rounded-pill btn-style px-5 shadow-dark btn-submit mx-auto d-flex justify-content-around mb-1"
-                            type="submit">
-                            <p class="btnText">submit</p>
-                        </button>
-                    </form>
-
-                    
-                </div>
+        <div class="col-6">
+          <div class="d-flex flex-column flex-lg-row">
+            <div class="mr-3 text-center"><i class="fas fa-hand-holding-heart fa-4x"></i></div>
+            <div>
+              <h3 class="text-center text-xl-left">打造專屬空間</h3>
+              <p class="d-none d-md-block">迎接初生寶寶的家庭，家庭成員增加，讓我們以最好的角度來好好規劃現有空間。</p>
             </div>
-
+          </div>
         </div>
-    </section>
-
-    
-
-    <section class="py-6 bg-light conter">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-2 d-none d-lg-block"></div>
-                
-
-                <div class="col-12 col-lg-8 justify-content-center">
-                    <div class="row row-cols-2 row-cols-md-3 gx-3 g-lg-4">
-
-                        <div class="col itemG">
-                            <div class="itemImgG">A</div>
-                            <div class="card item-g">
-                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
-                                    <p class="card-text ms-auto label me-1 me-md-0">ONE</p>
-                                    <h5 class="card-title text-center font-m">dehumidifier</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col itemG">
-                            <div class="itemImgG">B</div>
-                            <div class="card item-g">
-                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
-                                    <p class="card-text ms-auto label me-1 me-md-0">ONE</p>
-                                    <h5 class="card-title text-center font-m">range hood</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col itemG">
-                            <div class="itemImgG">C</div>
-                            <div class="card item-g">
-                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
-                                    <p class="card-text ms-auto label me-1 me-lg-0">ONE</p>
-                                    <h5 class="card-title text-center font-m">vacuum cleaner</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col itemB">
-                            <div class="itemImgB">D</div>
-                            <div class="card item-b">
-                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
-                                    <p class="card-text ms-auto label-b me-1 me-md-0">ONE</p>
-                                    <h5 class="card-title text-center font-m">toaster</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col itemB">
-                            <div class="itemImgB">E</div>
-                            <div class="card item-b">
-                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
-                                    <p class="card-text ms-auto label-b me-1 me-md-0">ONE</p>
-                                    <h5 class="card-title text-center font-m">scale</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col itemB">
-                            <div class="itemImgB">F</div>
-                            <div class="card item-b">
-                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
-                                    <p class="card-text ms-auto label-b me-1 me-md-0">ONE</p>
-                                    <h5 class="card-title text-center font-m">straightening iron</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col itemB">
-                            <div class="itemImgB">G</div>
-                            <div class="card item-b">
-                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
-                                    <p class="card-text ms-auto label-b me-1 me-md-0">ONE</p>
-                                    <h5 class="card-title text-center font-m">vacuum cleaner</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col itemB">
-                            <div class="itemImgB">H</div>
-                            <div class="card item-b">
-                                <div class="card-body d-flex flex-column justify-content-around px-0 px-md-2">
-                                    <p class="card-text ms-auto label-b me-1 me-md-0">ONE</p>
-                                    <h5 class="card-title text-center font-m">rice cooker</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-2 d-none d-lg-block"></div>
-
+        <div class="col-6">
+          <div class="d-flex flex-column flex-lg-row">
+            <div class="mr-3 text-center"><i class="fas fa-hand-sparkles fa-4x"></i></div>
+            <div>
+              <h3 class="text-center text-xl-left">輕鬆好清洗</h3>
+              <p class="d-none d-md-block">針對使用和保養，我們選擇耐用的材質，讓你不需要擔心需要花大把時間整理和佈置。
+              </p>
             </div>
+          </div>
         </div>
-
-        </div>
-    </section>
-    <section class="bg-light text-white">
-        <div class="container py-5">
-            <div class="row row-cols-1 text-center">
-                <div class="col font-m lighthouse">
-                    <p class="fs-5 mb-1 text-primary">13.32</p>
-                    <p class="fs-5 mb-1 text-secondary">who seeks after it and</p>
-                    <p class="fs-5 mb-0 mb-md-3 text-secondary">wants to have it</p>
-                </div>
-                <div class="col"><img src="img/lighthouse.svg" alt=""></div>
-
+        <div class="col-6">
+          <div class="d-flex flex-column flex-lg-row">
+            <div class="mr-3 text-center"><i class="fas fa-user-friends fa-4x"></i></div>
+            <div>
+              <h3 class="text-center text-xl-left">網友一致推薦</h3>
+              <p class="d-none d-md-block">銷售突破百萬包的市場肯定！網友好評不斷的極致居家感受，回歸你該有的優雅。</p>
             </div>
+          </div>
         </div>
-    </section>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-light my-lg-8" style="max-height: 400px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="my-6 px-5">
+            <h3 class="mb-4">空間佈置靈感</h3>
+            <p>出去玩很開心，待在家裡也能非常享受！把兩張沙發併起來，就是溫馨的兩人小天地；依偎在一起、聊聊一整年的心情，在家慶祝跨年一樣充滿樂趣。花些巧思和裝飾小物，加上必備的情境燈光，在家享受冬夜的溫暖美好。</p>
+            <p>對我們大多數人來說，節慶季節總是能讓人慢下腳步，也激發許多巧思。像是在廚房嘗試新食譜，或者有時餐桌也成為揮灑創意的好舞台。試試和孩子一起來場餐桌大改造，端上節慶大餐，創造每個人都愛的歡聚時光。</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-cover image-se img-top rounded-circle box-shadow d-none d-lg-block"
+            style="background-image: url('https://cdn.pixabay.com/photo/2015/09/18/16/08/bed-945881_960_720.jpg');">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light my-lg-9" style="max-height: 400px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="bg-cover image-se img-top rounded-circle box-shadow d-none d-lg-block"
+            style="background-image: url('https://cdn.pixabay.com/photo/2021/01/21/16/17/english-cocker-spaniel-5937757_960_720.jpg');">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="my-6 px-5">
+            <h3 class="mb-4">家庭新成員</h3>
+            <p>出去玩很開心，待在家裡也能非常享受！把兩張沙發併起來，就是溫馨的兩人小天地；依偎在一起、聊聊一整年的心情，在家慶祝跨年一樣充滿樂趣。花些巧思和裝飾小物，加上必備的情境燈光，在家享受冬夜的溫暖美好。</p>
+            <p>對我們大多數人來說，節慶季節總是能讓人慢下腳步，也激發許多巧思。像是在廚房嘗試新食譜，或者有時餐桌也成為揮灑創意的好舞台。試試和孩子一起來場餐桌大改造，端上節慶大餐，創造每個人都愛的歡聚時光。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+  <div class="container">
+    <hr>
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center mb-5 mt-3">為您推薦</h2>
+        <div class="card-deck">
+          <div class="card item-card border-0">
+            <a href="product-1.html">
+              <div class="index-card-img"
+                style="background-image: url('https://images.unsplash.com/photo-1504310996069-2357d42d5061?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');">
+              </div>
+              <div class="card-body text-center d-flex flex-column p-0">
+                <strong class="card-title text-secondary mt-2 mb-0">床罩</strong>
+                <span class="card-text text-dark">NT $3880</span>
+              </div>
+            </a>
+          </div>
+          <div class="card item-card border-0">
+            <a href="product-1.html">
+              <div class="index-card-img"
+                style="background-image: url('https://images.unsplash.com/photo-1504310996069-2357d42d5061?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');">
+              </div>
+              <div class="card-body text-center d-flex flex-column p-0">
+                <strong class="card-title text-secondary mt-2 mb-0">床罩</strong>
+                <span class="card-text text-dark">NT $3880</span>
+              </div>
+            </a>
+          </div>
+          <div class="card item-card border-0">
+            <a href="product-1.html">
+              <div class="index-card-img"
+                style="background-image: url('https://images.unsplash.com/photo-1504310996069-2357d42d5061?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');">
+              </div>
+              <div class="card-body text-center d-flex flex-column p-0">
+                <strong class="card-title text-secondary mt-2 mb-0">床罩</strong>
+                <span class="card-text text-dark">NT $3880</span>
+              </div>
+            </a>
+          </div>
+          <div class="card item-card border-0">
+            <a href="product-1.html">
+              <div class="index-card-img"
+                style="background-image: url('https://images.unsplash.com/photo-1504310996069-2357d42d5061?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');">
+              </div>
+              <div class="card-body text-center d-flex flex-column p-0">
+                <strong class="card-title text-secondary mt-2 mb-0">床罩</strong>
+                <span class="card-text text-dark">NT $3880</span>
+              </div>
+            </a>
+          </div>
+          <div class="card item-card border-0 d-none d-lg-block">
+            <a href="product-1.html">
+              <div class="index-card-img"
+                style="background-image: url('https://images.unsplash.com/photo-1504310996069-2357d42d5061?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');">
+              </div>
+              <div class="card-body text-center d-flex flex-column p-0">
+                <strong class="card-title text-secondary mt-2 mb-0">床罩</strong>
+                <span class="card-text text-dark">NT $3880</span>
+              </div>
+            </a>
+          </div>
 
-    <footer class="bg-light">
-        <div class="bg-secondary text-white ft-bg">
-            <div class="container">
-                <div class="row row-cols-1 text-center py-5">
-                    <div class="col mb-4">
-                        <h3 class="font-m mb-0">
-                            Neque porro quisquam</br>
-                            est qui dolorem!
-                        </h3>
-                    </div>
-                    <div class="col"><img src="img/market.svg" alt=""></div>
-    
-                </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mb-2 mt-6">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h5 class="py-1">聯絡我們</h5>
+        <a href="#"><i class="fab fa-facebook-square fa-2x text-info"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x text-info mx-3"></i></a>
+        <a href="#"><i class="fab fa-twitter-square fa-2x text-info"></i></a>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="bg-info">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-3 col-12">
+            <h5>關於我們</h5>
+            <div class="row d-flex">
+              <div class="col-md-12 col-4"><a href="#"><span>品牌故事</span></a></div>
+              <div class="col-md-12 col-4"><a href="#"><span>商店簡介</span></a></div>
+              <div class="col-md-12 col-4"><a href="#"><span>隱私權條款</span></a></div>
             </div>
-
+          </div>
+          <div class="col-md-3 col-12 mt-2 mt-lg-0">
+            <h5>購物說明</h5>
+            <div class="row d-flex">
+              <div class="col-md-12 col-4"><a href="#"><span>付款方式</span></a></div>
+              <div class="col-md-12 col-4"><a href="#"><span>運送方式</span></a></div>
+              <div class="col-md-12 col-4"><a href="#"><span>退換貨方式</span></a></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12 mt-2 mt-lg-0">
+            <h5>客服資訊</h5>
+            <div class="row d-flex">
+              <div class="col-md-12 col-4"><a href="#"><span>客服留言</span></a></div>
+              <div class="col-md-12 col-4"><a href="#"><span>常見問題</span></a></div>
+              <div class="col-md-12 col-4"><a href="#"><span>會員權益聲明</span></a></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12 text-right my-3 text-center">
+            <iframe width="100%"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7230.844654044096!2d121.72340817819529!3d25.019737900648153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d56a9178f0b5b%3A0x14fc08ebc6fee72f!2z6I-B5qGQ!5e0!3m2!1szh-TW!2stw!4v1614674533643!5m2!1szh-TW!2stw"
+              style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
         </div>
-
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="js/all.js"></script>
-
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
 </body>
-
 
 </html>

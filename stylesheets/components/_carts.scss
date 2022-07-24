@@ -1,0 +1,69 @@
+.table-items {
+    // background-color: $ocean;
+    table-layout: fixed;
+    word-break: break-all;
+    margin-bottom: 0;
+    
+    tr {
+        border-bottom-style: none;
+    }
+    
+    td ,th {
+        padding-bottom: 0;
+        color: $info;
+    }
+
+    .text-g {
+        color: $joy;
+    }
+
+}
+.table-items-se {
+    background-color: $light;
+}
+
+@media(max-width:575px){ 
+    .table-items { 
+
+
+        td ,th {
+            background-color: #fff;
+            color: gray;
+
+        }
+
+        
+
+    } 
+
+    .table-items-se {
+        background-color: $info;
+        color: white;
+    }
+}
+
+.cart-img {
+    height: 110px;
+    min-width: 110px;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.cart-img-sm {
+    height: 80px;
+}
+
+
+
+//特殊標題
+.rectangle-text {
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    letter-spacing: 10px;
+}
+
+.text-cl {
+    color: #8DA291;
+
+}

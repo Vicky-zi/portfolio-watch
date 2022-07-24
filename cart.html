@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車｜好舒適家居 shu shi bed</title>
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container nav-se">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand nav-logo" href="index.html">
+                <img src="images/logo-na.png" height="75" alt="" class="d-none d-lg-inline-block">
+
+            </a>
+            <a href="index.html">
+                <img src="images/logo-sm.png" height="30" alt="" class="d-inline-block d-lg-none">
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-center py-3" id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-lg-9">
+                        <a class="nav-link" href="product.html">產品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">會員</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cart.html">購物車</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container my-md-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="bg-light h4 mb-0 py-4 text-center">
+                    您的購物車
+                </h1>
+                <div class="d-flex flex-column flex-md-row py-3">
+                    <div class="d-flex align-items-center flex-grow-1 mr-md-3 removeitem">
+                        <div class="my-4 mr-4 flex-grow-1 flex-md-grow-0">
+                            <div class="bg-cover cart-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1600812682951-23678846dccb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=378&q=80'); height: 110px; min-width: 110px;">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-md-center flex-column flex-md-row flex-md-grow-1">
+                            <div class="mr-md-4">
+                                <span class="h5">簡約經典白被單</span><br>
+                                <span class="text-muted"><s>3980</s></span>
+                                <span class="text-danger">NT$ 1580</span>
+                            </div>
+                            <div class="d-flex align-items-center pl-md-9 ml-auto">
+                                <div class="input-group  ">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-primary text-info" type="button"
+                                            style="height: 48px; width: 48px;">-</button>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="1"
+                                        style="height: 48px; width: 48px;">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-primary text-info border-left-0" type="button"
+                                            style="height: 48px; width: 48px;">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
+                        <button class="btn d-none d-md-block" type="button" data-toggle="modal" data-title="刪除 簡約經典白被單"
+                            data-body="簡約經典白被單 1 件" data-backdrop="static" data-target="#removeModal"><i
+                                class="far fa-trash-alt"></i></button>
+                        <span class="h5 mb-0 mr-md-3">NT$ 1580</span>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="d-flex flex-column flex-md-row py-3">
+                    <div class="d-flex align-items-center flex-grow-1 mr-md-3">
+                        <div class="my-4 mr-4 flex-grow-1 flex-md-grow-0">
+                            <div class="bg-cover cart-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1606855637060-a513f51f494c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80'); height: 110px; min-width: 110px;">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-md-center flex-column flex-md-row flex-md-grow-1">
+                            <div class="mr-md-4">
+                                <span class="h5">純淨白枕套</span><br>
+                                <span>NT$ 450</span>
+                            </div>
+                            <div class="d-flex align-items-center pl-md-9 ml-auto">
+                                <div class="input-group  ">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-primary text-info" type="button"
+                                            style="height: 48px; width: 48px;">-</button>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="1"
+                                        style="height: 48px; width: 48px;">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-primary text-info border-left-0" type="button"
+                                            style="height: 48px; width: 48px;">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
+                        <button class="btn d-none d-md-block" type="button" data-toggle="modal" data-title="刪除 純淨白枕套"
+                            data-body="純淨白枕套 1 件" data-backdrop="static" data-target="#removeModal"><i
+                                class="far fa-trash-alt"></i></button>
+                        <span class="h5 mb-0 mr-md-3">NT$ 900</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex flex-column flex-md-row py-3">
+                    <div class="d-flex align-items-center flex-grow-1 mr-md-3">
+                        <div class="my-4 mr-4 flex-grow-1 flex-md-grow-0">
+                            <div class="bg-cover cart-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1606855637060-a513f51f494c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80'); height: 110px; min-width: 110px;">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-md-center flex-column flex-md-row flex-md-grow-1">
+                            <div class="mr-md-4">
+                                <span class="h5">居家燈具</span><br>
+                                <span>NT$ 450</span>
+                            </div>
+                            <div class="d-flex align-items-center pl-md-9 ml-auto">
+                                <div class="input-group  ">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-primary text-info" type="button"
+                                            style="height: 48px; width: 48px;">-</button>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="1"
+                                        style="height: 48px; width: 48px;">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-primary text-info border-left-0" type="button"
+                                            style="height: 48px; width: 48px;">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
+                        <button class="btn d-none d-md-block" type="button" data-toggle="modal" data-title="刪除 居家燈具"
+                            data-body="居家燈具 1 件" data-backdrop="static" data-target="#removeModal"><i
+                                class="far fa-trash-alt"></i></button>
+                        <span class="h5 mb-0 mr-md-3">NT$ 900</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <table class="table table-borderless table-items">
+                    <h2 class="text-center mt-5 mb-0 h4 py-4 mt-lg-0 border-bottom border-light table-items-se">
+                        訂單摘要</h2>
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td>小計</td>
+                            <td class="text-right">NT$ 2,480</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">運費</td>
+                            <td class="text-right">NT$ 300</td>
+                        </tr>
+                        <td class="h5 pb-4 text-g">總計</td>
+                        <th class="text-right h5 text-g">NT$ 2780</th>
+                    </tbody>
+                </table>
+                <a href="checkout-1-1.html" class="btn btn-joy btn-block d-none d-lg-block py-3 border-0">結帳</a>
+            </div>
+        </div>
+    </div>
+    <a href="checkout-1-1.html" class="btn btn-warning btn-block d-lg-none py-3">結帳</a>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-outline-danger remove">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="bg-info">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-3 col-12">
+                        <h5>關於我們</h5>
+                        <div class="row d-flex">
+                            <div class="col-md-12 col-4"><a href="#"><span>品牌故事</span></a></div>
+                            <div class="col-md-12 col-4"><a href="#"><span>商店簡介</span></a></div>
+                            <div class="col-md-12 col-4"><a href="#"><span>隱私權條款</span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mt-2 mt-lg-0">
+                        <h5>購物說明</h5>
+                        <div class="row d-flex">
+                            <div class="col-md-12 col-4"><a href="#"><span>付款方式</span></a></div>
+                            <div class="col-md-12 col-4"><a href="#"><span>運送方式</span></a></div>
+                            <div class="col-md-12 col-4"><a href="#"><span>退換貨方式</span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mt-2 mt-lg-0">
+                        <h5>客服資訊</h5>
+                        <div class="row d-flex">
+                            <div class="col-md-12 col-4"><a href="#"><span>客服留言</span></a></div>
+                            <div class="col-md-12 col-4"><a href="#"><span>常見問題</span></a></div>
+                            <div class="col-md-12 col-4"><a href="#"><span>會員權益聲明</span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 text-right my-3 text-center">
+                        <iframe width="100%"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7230.844654044096!2d121.72340817819529!3d25.019737900648153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d56a9178f0b5b%3A0x14fc08ebc6fee72f!2z6I-B5qGQ!5e0!3m2!1szh-TW!2stw!4v1614674533643!5m2!1szh-TW!2stw"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

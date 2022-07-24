@@ -1,0 +1,31 @@
+// @import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//區塊式內容
+@import "components/header";
+@import "components/section";
+@import "components/carts";
+@import "components/carditem";
+@import "components/nav";
+
+
+
+//元件
+@import "components/form-square";
+@import "components/porcess-steps";
+@import "components/item-card";
+@import "components/icon";
+@import "components/interactive"; 
+// @import "components/custom-bs4";
+@import "components/btnse";
+
+
+
+
+.negative-row-margin {
+    margin-left: -15px;
+    margin-right: -15px;
+}

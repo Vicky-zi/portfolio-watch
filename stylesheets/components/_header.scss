@@ -1,0 +1,26 @@
+.header-main-image {
+    height: 496px;
+    background-size: cover;
+    background-position: center center;
+}
+
+// @media(max-width:375px){ 
+//     .header-main-image { 
+//         max-height: 100%;
+//     } 
+// }
+
+.main-image {
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.nav-se {
+    position: relative;
+}
+
+.nav-logo {
+    position: absolute;
+    left: 46%;
+}
