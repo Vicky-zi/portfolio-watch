@@ -3,258 +3,201 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>購物車｜好舒適家居 shu shi bed</title>
-    <link rel="stylesheet" href="stylesheets/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/all.js"></script>
+    <title>商品專區</title>
+
+    <link rel="../img/logo-sm.png" href="...">
+    <meta name="description" content="命中錶, 手錶,鐘錶">
+    <meta name='description' content='命中錶, 手錶, 配件, 運動, 功能' />
+
+    <meta property="og:title" content="命中錶" />
+    <meta property="og:description" content="命中錶">
+    <meta property="og:type" content="命中錶" />
+    <link href="../img/logo-sm.png" rel="icon" />
+
+    <link href="stylesheets/helpers/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Noto+Sans+TC:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
 </head>
 
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container nav-se">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/logo.png" class="d-none d-lg-block" alt="">
+                <img src="/img/logo-sm.png" class="d-lg-none" alt="" style="height: 40px;">
+                <h1 class="visually-hidden">命定錶</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand nav-logo" href="index.html">
-                <img src="images/logo-na.png" height="75" alt="" class="d-none d-lg-inline-block">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link btn-special" href="serve.html">服務介紹</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link btn-special active" href="#">商品專區</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link btn-special" href="story.html">鐘錶故事</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning px-5 rounded-pill btn-pill-special" href="customer.html">客製化手錶配件</a>
+                    </li>
 
-            </a>
-            <a href="index.html">
-                <img src="images/logo-sm.png" height="30" alt="" class="d-inline-block d-lg-none">
-            </a>
-
-            <div class="collapse navbar-collapse justify-content-center py-3" id="navbarSupportedContent">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item mr-lg-9">
-                        <a class="nav-link" href="product.html">產品</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">會員</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="cart.html">購物車</a>
-                    </li>
                 </ul>
-            </div>
 
+            </div>
         </div>
     </nav>
+    <main style="background-image: url('./img/lightpaperfibers.png');">
+        <header class=" border border-2 border-warning border-bottom-0 border-end-0 border-start-0 mb-4 serve-banner">
+            <h2 class="d-none d-lg-block serve-bannerText fs-1 text-center">Product</h2>
+        </header>
 
-    <div class="container my-md-5">
-        <div class="row">
-            <div class="col-lg-8">
-                <h1 class="bg-light h4 mb-0 py-4 text-center">
-                    您的購物車
-                </h1>
-                <div class="d-flex flex-column flex-md-row py-3">
-                    <div class="d-flex align-items-center flex-grow-1 mr-md-3 removeitem">
-                        <div class="my-4 mr-4 flex-grow-1 flex-md-grow-0">
-                            <div class="bg-cover cart-img"
-                                style="background-image: url('https://images.unsplash.com/photo-1600812682951-23678846dccb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=378&q=80'); height: 110px; min-width: 110px;">
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-md-center flex-column flex-md-row flex-md-grow-1">
-                            <div class="mr-md-4">
-                                <span class="h5">簡約經典白被單</span><br>
-                                <span class="text-muted"><s>3980</s></span>
-                                <span class="text-danger">NT$ 1580</span>
-                            </div>
-                            <div class="d-flex align-items-center pl-md-9 ml-auto">
-                                <div class="input-group  ">
-                                    <div class="input-group-prepend">
-                                        <button class="btn btn-outline-primary text-info" type="button"
-                                            style="height: 48px; width: 48px;">-</button>
+        <section class="container">
+
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col col-lg-3 text-center text-lg-start mb-4">
+                    <ul class="nav flex-column text-white">
+                        <li class="nav-item">
+                            <a class="nav-link text-warning active fw-bold" aria-current="page"
+                                href="#">Classification</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">機械錶</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">石英錶</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">電子錶</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">錶類配件</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-lg-9">
+                    <div class="row row-cols-1 row-cols-lg-3 g-4 mb-4">
+                        <div class="col">
+                            <a href="#" class="card text-decoration-none border-0 shadow h-100">
+                                <img src="https://images.unsplash.com/photo-1636551462973-3d59d4405012?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                    alt="" class="img-fluid card-img-top min-contes">
+                                <div class="card-body text-start">
+                                    <div>
+                                        <h5 class="fw-blod">酷炫電子手錶</h5>
+                                        <p><small>W0012345</small></p>
+                                        <p class="mt-4 pt-3"><strong>NT$ 6,399</strong></p>
                                     </div>
-                                    <input type="text" class="form-control text-center" value="1"
-                                        style="height: 48px; width: 48px;">
-                                    <div class="input-group-prepend">
-                                        <button class="btn btn-outline-primary text-info border-left-0" type="button"
-                                            style="height: 48px; width: 48px;">+</button>
-                                    </div>
+
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
-                        <button class="btn d-none d-md-block" type="button" data-toggle="modal" data-title="刪除 簡約經典白被單"
-                            data-body="簡約經典白被單 1 件" data-backdrop="static" data-target="#removeModal"><i
-                                class="far fa-trash-alt"></i></button>
-                        <span class="h5 mb-0 mr-md-3">NT$ 1580</span>
-                    </div>
+                        <div class="col hot-contes">
+                            <a href="#" class="card text-decoration-none border-0 shadow h-100">
+                                <img src="https://images.unsplash.com/photo-1548169874-53e85f753f1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=710&q=80"
+                                    alt="" class="img-fluid card-img-top min-contes">
+                                <div class="card-body text-start">
+                                    <div>
+                                        <h5 class="fw-blod">極致工藝機械錶</h5>
+                                        <p><small>W0012346</small></p>
+                                        <p class="font-monospace text-decoration-line-through mb-0">NT$ 10,699</p>
+                                        <p class="text-danger"><strong>NT$ 8,399</strong></p>
+                                    </div>
 
-                </div>
-                <hr>
-                <div class="d-flex flex-column flex-md-row py-3">
-                    <div class="d-flex align-items-center flex-grow-1 mr-md-3">
-                        <div class="my-4 mr-4 flex-grow-1 flex-md-grow-0">
-                            <div class="bg-cover cart-img"
-                                style="background-image: url('https://images.unsplash.com/photo-1606855637060-a513f51f494c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80'); height: 110px; min-width: 110px;">
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-md-center flex-column flex-md-row flex-md-grow-1">
-                            <div class="mr-md-4">
-                                <span class="h5">純淨白枕套</span><br>
-                                <span>NT$ 450</span>
-                            </div>
-                            <div class="d-flex align-items-center pl-md-9 ml-auto">
-                                <div class="input-group  ">
-                                    <div class="input-group-prepend">
-                                        <button class="btn btn-outline-primary text-info" type="button"
-                                            style="height: 48px; width: 48px;">-</button>
-                                    </div>
-                                    <input type="text" class="form-control text-center" value="1"
-                                        style="height: 48px; width: 48px;">
-                                    <div class="input-group-prepend">
-                                        <button class="btn btn-outline-primary text-info border-left-0" type="button"
-                                            style="height: 48px; width: 48px;">+</button>
-                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
-                        <button class="btn d-none d-md-block" type="button" data-toggle="modal" data-title="刪除 純淨白枕套"
-                            data-body="純淨白枕套 1 件" data-backdrop="static" data-target="#removeModal"><i
-                                class="far fa-trash-alt"></i></button>
-                        <span class="h5 mb-0 mr-md-3">NT$ 900</span>
-                    </div>
-                </div>
-                <hr>
-                <div class="d-flex flex-column flex-md-row py-3">
-                    <div class="d-flex align-items-center flex-grow-1 mr-md-3">
-                        <div class="my-4 mr-4 flex-grow-1 flex-md-grow-0">
-                            <div class="bg-cover cart-img"
-                                style="background-image: url('https://images.unsplash.com/photo-1606855637060-a513f51f494c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80'); height: 110px; min-width: 110px;">
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-md-center flex-column flex-md-row flex-md-grow-1">
-                            <div class="mr-md-4">
-                                <span class="h5">居家燈具</span><br>
-                                <span>NT$ 450</span>
-                            </div>
-                            <div class="d-flex align-items-center pl-md-9 ml-auto">
-                                <div class="input-group  ">
-                                    <div class="input-group-prepend">
-                                        <button class="btn btn-outline-primary text-info" type="button"
-                                            style="height: 48px; width: 48px;">-</button>
+                        <div class="col">
+                            <a href="#" class="card text-decoration-none border-0 shadow h-100">
+                                <img src="https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                                    alt="" class="img-fluid card-img-top min-contes">
+                                <div class="card-body text-start">
+                                    <div>
+                                        <h5 class="fw-blod">百搭造型石英錶</h5>
+                                        <p><small>W0012347</small></p>
+                                        <p class="mt-4 pt-3"><strong>NT$ 5,899</strong></p>
                                     </div>
-                                    <input type="text" class="form-control text-center" value="1"
-                                        style="height: 48px; width: 48px;">
-                                    <div class="input-group-prepend">
-                                        <button class="btn btn-outline-primary text-info border-left-0" type="button"
-                                            style="height: 48px; width: 48px;">+</button>
-                                    </div>
+
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
-                        <button class="btn d-none d-md-block" type="button" data-toggle="modal" data-title="刪除 居家燈具"
-                            data-body="居家燈具 1 件" data-backdrop="static" data-target="#removeModal"><i
-                                class="far fa-trash-alt"></i></button>
-                        <span class="h5 mb-0 mr-md-3">NT$ 900</span>
+                        <div class="col">
+                            <a href="#" class="card text-decoration-none border-0 shadow h-100">
+                                <img src="https://images.unsplash.com/photo-1526045431048-f857369baa09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                    alt="" class="img-fluid card-img-top min-contes">
+                                <div class="card-body text-start">
+                                    <div>
+                                        <h5 class="fw-blod">光動能錶</h5>
+                                        <p><small>W0012348</small></p>
+                                        <p class="mt-4 pt-3"><strong>NT$ 7,999</strong></p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
 
-            <div class="col-lg-4">
-                <table class="table table-borderless table-items">
-                    <h2 class="text-center mt-5 mb-0 h4 py-4 mt-lg-0 border-bottom border-light table-items-se">
-                        訂單摘要</h2>
-                    <thead></thead>
-                    <tbody>
-                        <tr>
-                            <td>小計</td>
-                            <td class="text-right">NT$ 2,480</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">運費</td>
-                            <td class="text-right">NT$ 300</td>
-                        </tr>
-                        <td class="h5 pb-4 text-g">總計</td>
-                        <th class="text-right h5 text-g">NT$ 2780</th>
-                    </tbody>
-                </table>
-                <a href="checkout-1-1.html" class="btn btn-joy btn-block d-none d-lg-block py-3 border-0">結帳</a>
+    </main>
+
+
+
+
+
+    <footer class="border border-end-0 border-bottom-0 border-start-0 border-warning border-2 bg-light">
+
+        <section class="container py-5">
+            <div class="row row-clos-1 row-clos-4 d-flex justify-content-center align-items-center text-center">
+
+                <div class="col mb-4">
+                    <img src="img/footer2.png" alt="">
+                </div>
+                <div class="col mb-5 mb-lg-0">
+                    <h4>加入我們團隊</h4>
+                    <p>我也愛錶，希望能盡一份心力！</p>
+                    <button type="button" class="btn btn-outline-dark rounded-pill btn-pill-m px-5">聯絡我們</button>
+                </div>
+                <div class="col mb-4">
+                    <img src="img/footer1.png" alt="">
+                </div>
+                <div class="col">
+                    <h4>加入我們團隊</h4>
+                    <p>我也有故事，你有酒嗎？</p>
+                    <button type="button" class="btn btn-outline-dark rounded-pill btn-pill-m px-5">投稿專區</button>
+                </div>
             </div>
+        </section>
+        <div class="footer bg-dark text-center py-3">
+            <p class="text-light mb-0"><small>Copyright © 2021 WATCH.All rights reserved.</small></p>
+
         </div>
-    </div>
-    <a href="checkout-1-1.html" class="btn btn-warning btn-block d-lg-none py-3">結帳</a>
 
-
-    <!-- Modal -->
-    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-danger text-white">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-                    <button type="button" class="btn btn-outline-danger remove">確認</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="bg-info">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-md-3 col-12">
-                        <h5>關於我們</h5>
-                        <div class="row d-flex">
-                            <div class="col-md-12 col-4"><a href="#"><span>品牌故事</span></a></div>
-                            <div class="col-md-12 col-4"><a href="#"><span>商店簡介</span></a></div>
-                            <div class="col-md-12 col-4"><a href="#"><span>隱私權條款</span></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-12 mt-2 mt-lg-0">
-                        <h5>購物說明</h5>
-                        <div class="row d-flex">
-                            <div class="col-md-12 col-4"><a href="#"><span>付款方式</span></a></div>
-                            <div class="col-md-12 col-4"><a href="#"><span>運送方式</span></a></div>
-                            <div class="col-md-12 col-4"><a href="#"><span>退換貨方式</span></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-12 mt-2 mt-lg-0">
-                        <h5>客服資訊</h5>
-                        <div class="row d-flex">
-                            <div class="col-md-12 col-4"><a href="#"><span>客服留言</span></a></div>
-                            <div class="col-md-12 col-4"><a href="#"><span>常見問題</span></a></div>
-                            <div class="col-md-12 col-4"><a href="#"><span>會員權益聲明</span></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-12 text-right my-3 text-center">
-                        <iframe width="100%"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7230.844654044096!2d121.72340817819529!3d25.019737900648153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d56a9178f0b5b%3A0x14fc08ebc6fee72f!2z6I-B5qGQ!5e0!3m2!1szh-TW!2stw!4v1614674533643!5m2!1szh-TW!2stw"
-                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
 </body>
+
+
+
+
 
 </html>

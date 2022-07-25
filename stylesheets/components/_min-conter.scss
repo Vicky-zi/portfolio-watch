@@ -1,0 +1,30 @@
+.min-contes {
+    height: 213px;
+    object-fit: cover;
+
+    &:hover {
+        opacity: 0.5;
+        background: transparent linear-gradient(180deg, #00000000 0%, #0000005D 100%) 0% 0% no-repeat padding-box;
+    }
+}
+
+
+.hot-contes {
+    position: relative;
+
+
+    &:before{
+        content:"推薦商品";
+        width: 40px;
+        height: 100px;
+        background-color: $danger;
+        position: absolute;
+        right: 4%;
+        z-index: 1;
+        text-align: center;
+        font-weight:bold;
+        color: white;
+        padding: 0 10px;
+        border-radius: 2px;
+    }
+}

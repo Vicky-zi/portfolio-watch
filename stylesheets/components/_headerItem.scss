@@ -1,0 +1,63 @@
+.home-banner {
+    height: 810px;
+    width: 100%;
+    background-image: url('https://images.pexels.com/photos/179911/pexels-photo-179911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.home-bannerText {
+    font-family: 'Kalam', cursive;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+
+
+// 服務頁開始
+
+
+.serve-banner {
+    height: 400px;
+    background-image: url('https://images.pexels.com/photos/2387819/pexels-photo-2387819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.serve-bannerText {
+    font-family: 'Kalam', cursive;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+
+
+
+@media (max-width: 576px) {
+    .home-banner {
+        height: 375px;
+        background-image: url('https://images.unsplash.com/photo-1604242692760-2f7b0c26856d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80');
+
+    }
+
+
+
+    // 服務頁開始
+
+
+    .serve-banner {
+        height: 250px;
+
+    }
+}
